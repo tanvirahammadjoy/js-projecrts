@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended CSS Example</title>
+    <link rel="stylesheet" href="../basicstylesheet.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar d-flex justify-content-between align-items-center">
+        <div class="navbar-brand">MyWebsite</div>
+        <ul class="navbar-nav d-flex">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Services</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <!-- Alert -->
+        <div class="alert alert-success">
+            <span class="alert-icon">✔️</span> Your action was successful!
+        </div>
+
+        <!-- Tooltip Example -->
+        <p>
+            Hover over this <span class="tooltip">text
+                <span class="tooltip-text">Tooltip information</span>
+            </span> to see the tooltip.
+        </p>
+
+        <!-- Dropdown Example -->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle">Dropdown</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">Action 1</div>
+                <div class="dropdown-item">Action 2</div>
+                <div class="dropdown-item">Action 3</div>
+            </div>
+        </div>
+
+        <!-- Tabs Example -->
+        <div class="tabs mt-4">
+            <div class="tab active" data-tab="tab1">Tab 1</div>
+            <div class="tab" data-tab="tab2">Tab 2</div>
+            <div class="tab" data-tab="tab3">Tab 3</div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <p>Content for Tab 1.</p>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <p>Content for Tab 2.</p>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <p>Content for Tab 3.</p>
+            </div>
+        </div>
+
+        <!-- Accordion Example -->
+        <div class="accordion mt-4">
+            <div class="accordion-item">
+                <div class="accordion-header">Accordion Item 1</div>
+                <div class="accordion-body">
+                    <p>Details for Accordion Item 1.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Accordion Item 2</div>
+                <div class="accordion-body">
+                    <p>Details for Accordion Item 2.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Accordion Item 3</div>
+                <div class="accordion-body">
+                    <p>Details for Accordion Item 3.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid Layout with Cards -->
+        <div class="row mt-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <h3 class="card-title">Card Title 1</h3>
+                    <p class="card-text">This is a description for card one.</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <h3 class="card-title">Card Title 2</h3>
+                    <p class="card-text">This is a description for card two.</p>
+                    <button class="btn btn-secondary">Read More</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <h3 class="card-title">Card Title 3</h3>
+                    <p class="card-text">This is a description for card three.</p>
+                    <button class="btn btn-success">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar Example -->
+        <div class="mt-4">
+            <h2>Progress</h2>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="mt-5">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <!-- Tabs Content -->
+        <div class="tab-content mt-4">
+            <div class="tab-pane active" id="tab1">
+                <p>Content for Tab 1.</p>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <p>Content for Tab 2.</p>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <p>Content for Tab 3.</p>
+            </div>
+        </div>
+
+        <!-- Button to Open Modal -->
+        <div class="mt-5">
+            <button class="btn btn-info" id="open-modal">Open Modal</button>
+        </div>
+
+        <!-- Modal Structure -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button class="modal-close" id="close-modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is the content of the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" id="close-modal-footer">Close</button>
+                        <button class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        &copy; 2024 MyWebsite. All rights reserved.
+    </footer>
+
+    <!-- JavaScript for Interactive Components -->
+    <script>
+        // Modal Functionality
+        const openModalButton = document.getElementById('open-modal');
+        const closeModalButtons = document.querySelectorAll('#close-modal, #close-modal-footer');
+        const modal = document.getElementById('myModal');
+
+        openModalButton.addEventListener('click', () => {
+            modal.classList.add('show');
+        });
+
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.classList.remove('show');
+            });
+        });
+
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+
+        // Dropdown Functionality
+        const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const dropdownMenu = toggle.nextElementSibling;
+                dropdownMenu.classList.toggle('show');
+            });
+        });
+
+        // Tabs Functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and panes
+                tabs.forEach(t => t.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding pane
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Accordion Functionality
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentElement;
+                accordionItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
